@@ -2,7 +2,17 @@
   "name": "@task-planner/ai",
   "private": true,
   "type": "module",
+  "exports": {
+    ".": "./index.ts",
+    "./client/openaiClient": "./client/openaiClient.ts",
+    "./schemas/taskExtraction": "./schemas/taskExtraction.ts",
+    "./schemas/messageIntent": "./schemas/messageIntent.ts",
+    "./services/extractTask": "./services/extractTask.ts",
+    "./services/classifyMessageIntent": "./services/classifyMessageIntent.ts",
+    "./services/generateClarificationQuestions": "./services/generateClarificationQuestions.ts"
+  },
   "dependencies": {
+    "openai": "^4.95.1",
     "zod": "^3.24.0"
   }
 }
